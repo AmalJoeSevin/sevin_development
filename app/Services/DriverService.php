@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Services;
-//use App\Models\User;
 
+use App\Models\Driver;
+//use App\Models\User;
 class DriverService
 {
     /**
@@ -18,5 +19,10 @@ class DriverService
             'name' => 'Sevin',
             'role' => 'Developer'
         ];
+    }
+
+    public function createDriver(array $data)
+    {
+        return Driver::create($data);
     }
 }

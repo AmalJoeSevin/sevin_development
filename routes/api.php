@@ -10,3 +10,4 @@ Route::get('/test', function () {
 });
 
 Route::get('/driver', [DriverController::class, 'index']);
+Route::post('/drivers', [DriverController::class, 'store']);
