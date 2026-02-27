@@ -11,3 +11,6 @@ Route::get('/test', function () {
 
 Route::get('/driver', [DriverController::class, 'index']);
 Route::post('/drivers', [DriverController::class, 'store']);
+
+Route::apiResource('drivers', DriverController::class);
+Route::get('drivers-explain', [DriverController::class,'explainTest']);
